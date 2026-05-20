@@ -1,0 +1,9 @@
+.signup-page {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(18, 184, 134, 0.16), transparent 30%),
+    var(--bg);
+}
+
+.signup-submit {
+  margin-top: 22px;
+}

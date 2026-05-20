@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write | greenlog</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/write.css">
+</head>
+<body>
+  <header id="navbar" class="navbar"></header>
+
+  <main class="page write-page">
+    <section class="write-header">
+      <div>
+        <h1>Write a post</h1>
+        <p>Use simple markdown and preview your post before publishing.</p>
+      </div>
+      <button id="publishButton" class="btn" type="button">Publish</button>
+    </section>
+
+    <section class="editor-grid">
+      <div class="panel editor-panel">
+        <label for="postTitle">Title</label>
+        <input id="postTitle" type="text" placeholder="Post title">
+        <label for="postContent" class="content-label">Markdown content</label>
+        <textarea id="postContent" placeholder="# Heading&#10;&#10;## Subheading&#10;&#10;Write **bold** text and paragraphs."></textarea>
+        <p id="writeMessage" class="message" role="status"></p>
+      </div>
+
+      <article class="panel preview-panel">
+        <div class="preview-top">
+          <span>Preview</span>
+        </div>
+        <div id="previewContent" class="markdown-body preview-content">
+          <p class="muted">Your preview will appear here.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/write.js"></script>
+</body>
+</html>

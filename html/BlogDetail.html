@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post detail | greenlog</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/blogDetail.css">
+</head>
+<body>
+  <header id="navbar" class="navbar"></header>
+
+  <main class="page detail-page">
+    <article class="panel detail-card">
+      <a class="back-link" href="Main.html">Back to posts</a>
+      <h1 id="detailTitle">Post title</h1>
+      <div class="detail-meta">
+        <span id="detailAuthor">author</span>
+        <span id="detailDate">date</span>
+      </div>
+      <div id="detailContent" class="markdown-body detail-content"></div>
+      <button id="heartButton" class="heart-button" type="button">
+        <span id="heartIcon">♡</span>
+        <span id="heartCount">0</span>
+      </button>
+    </article>
+  </main>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/blogDetail.js"></script>
+</body>
+</html>

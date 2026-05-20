@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | greenlog</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/signup.css">
+</head>
+<body>
+  <main class="auth-page signup-page">
+    <section class="auth-card">
+      <h1 class="auth-title">Signup</h1>
+      <p class="auth-subtitle">Create a local demo account for this frontend project.</p>
+
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="signupUserId">User ID</label>
+          <input id="signupUserId" type="text" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" autocomplete="new-password" required>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm password</label>
+          <input id="signupConfirmPassword" type="password" autocomplete="new-password" required>
+        </div>
+        <div class="form-group">
+          <label for="favoriteColor">Favorite color</label>
+          <input id="favoriteColor" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="elementarySchool">Elementary school name</label>
+          <input id="elementarySchool" type="text" required>
+        </div>
+        <button class="btn full signup-submit" type="submit">Signup</button>
+        <p id="signupMessage" class="message" role="status"></p>
+      </form>
+
+      <p class="link-line">Already have an account? <a class="text-button" href="Login.html">Go to Login</a></p>
+    </section>
+  </main>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/signup.js"></script>
+</body>
+</html>

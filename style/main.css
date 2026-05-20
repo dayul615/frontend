@@ -1,0 +1,25 @@
+.feed-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.feed-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.feed-header p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .feed-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

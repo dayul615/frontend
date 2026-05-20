@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | greenlog</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+  <header id="navbar" class="navbar"></header>
+
+  <main class="page profile-page">
+    <section class="profile-hero panel">
+      <div id="profileAvatar" class="profile-avatar">G</div>
+      <div class="profile-summary">
+        <p class="muted">Profile settings</p>
+        <h1 id="profileName">guest.writer</h1>
+        <p id="profileBio">아직 소개글이 없습니다.</p>
+        <div class="follow-stats">
+          <span><strong id="followerCount">26</strong> followers</span>
+          <span><strong id="followingCount">8</strong> following</span>
+        </div>
+      </div>
+      <button id="followButton" class="btn secondary" type="button">Follow</button>
+    </section>
+
+    <section class="profile-grid">
+      <form id="profileForm" class="panel profile-form" novalidate>
+        <h2>Edit profile</h2>
+        <div class="form-group">
+          <label for="nickname">Nickname</label>
+          <input id="nickname" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="bio">Short bio</label>
+          <textarea id="bio" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="interests">Interests or skills</label>
+          <input id="interests" type="text" placeholder="JavaScript, AWS, Docker">
+        </div>
+        <button class="btn" type="submit">Save profile</button>
+        <p id="profileMessage" class="message" role="status"></p>
+      </form>
+
+      <aside class="panel profile-preview">
+        <h2>Saved information</h2>
+        <dl>
+          <dt>Nickname</dt>
+          <dd id="savedNickname">guest.writer</dd>
+          <dt>Bio</dt>
+          <dd id="savedBio">아직 소개글이 없습니다.</dd>
+          <dt>Interests</dt>
+          <dd id="savedInterests">JavaScript, CSS, Blog</dd>
+        </dl>
+      </aside>
+    </section>
+  </main>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/profile.js"></script>
+</body>
+</html>

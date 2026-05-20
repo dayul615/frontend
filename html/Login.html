@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | greenlog</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/login.css">
+</head>
+<body>
+  <main class="auth-page login-page">
+    <section class="auth-card">
+      <h1 class="auth-title">Login</h1>
+      <p class="auth-subtitle">Write, save, and follow posts on greenlog.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginUserId">User ID</label>
+          <input id="loginUserId" type="text" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" autocomplete="current-password" required>
+        </div>
+        <button class="btn full login-submit" type="submit">Login</button>
+        <p id="loginMessage" class="message" role="status"></p>
+      </form>
+
+      <div class="auth-actions">
+        <a class="text-button" href="Signup.html">Create an account</a>
+        <button id="showResetButton" class="text-button" type="button">Forgot your password?</button>
+      </div>
+
+      <form id="resetForm" class="reset-panel" novalidate>
+        <h2>Password reset</h2>
+        <p class="muted">Answer the same questions used during signup.</p>
+        <div class="form-group">
+          <label for="resetUserId">User ID</label>
+          <input id="resetUserId" type="text" autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="resetColor">What is your favorite color?</label>
+          <input id="resetColor" type="text">
+        </div>
+        <div class="form-group">
+          <label for="resetSchool">What is the name of your elementary school?</label>
+          <input id="resetSchool" type="text">
+        </div>
+        <div class="form-group">
+          <label for="newPassword">New password</label>
+          <input id="newPassword" type="password" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="confirmNewPassword">Confirm new password</label>
+          <input id="confirmNewPassword" type="password" autocomplete="new-password">
+        </div>
+        <button class="btn full" type="submit">Reset password</button>
+        <p id="resetMessage" class="message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/login.js"></script>
+</body>
+</html>

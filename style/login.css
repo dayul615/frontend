@@ -1,0 +1,41 @@
+.login-page {
+  background:
+    radial-gradient(circle at top left, rgba(18, 184, 134, 0.14), transparent 34%),
+    var(--bg);
+}
+
+.login-submit {
+  margin-top: 22px;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.reset-panel {
+  display: none;
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.reset-panel.show {
+  display: block;
+}
+
+.reset-panel h2 {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 420px) {
+  .auth-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
